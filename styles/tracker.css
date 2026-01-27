@@ -1,0 +1,227 @@
+/* ============================================================================
+   TRACKER – CONTENITORE PRINCIPALE
+   ============================================================================ */
+
+.initiative-tracker {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem;
+  max-width: none;
+}
+
+/* ============================================================================
+   HEADER
+   ============================================================================ */
+
+.tracker-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.tracker-header button {
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.tracker-header button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ============================================================================
+   LISTA
+   ============================================================================ */
+
+.tracker-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* ============================================================================
+   ENTRY
+   ============================================================================ */
+
+.tracker-entry {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) 60px 40px;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 0.5rem;
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 0;
+
+  position: relative;
+  transition: opacity 0.25s ease;
+}
+
+.tracker-entry.removing {
+  opacity: 0;
+}
+
+.tracker-entry.inactive {
+  opacity: 0.35;
+  filter: grayscale(100%);
+}
+
+/* ============================================================================
+   AVATAR + PULSANTE RIMOZIONE (✖)
+   ============================================================================ */
+
+.entry-avatar {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+/* Immagine */
+.entry-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Pulsante ✖ ancorato all’avatar */
+.tracker-remove {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+
+  width: 14px;
+  height: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+
+  color: #ffffff;
+  font-size: 8px;
+  line-height: 1;
+
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.2s ease, transform 0.15s ease;
+}
+
+.tracker-entry:hover .tracker-remove {
+  opacity: 1;
+}
+
+.tracker-remove:hover {
+  background: rgba(192, 57, 43, 0.9);
+  transform: scale(1.15);
+}
+
+/* ============================================================================
+   INFO (nome + tipo)
+   ============================================================================ */
+
+.entry-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1rem;
+  overflow-wrap: anywhere;
+}
+
+.entry-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.entry-type {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* ============================================================================
+   INIZIATIVA
+   ============================================================================ */
+
+.entry-initiative {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* ============================================================================
+   CONTROLLI
+   ============================================================================ */
+
+.entry-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.entry-controls button {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.entry-controls button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ============================================================================
+   FOOTER (RESET)
+   ============================================================================ */
+
+.tracker-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.tracker-footer button {
+  flex: 1;
+  margin: 0 0.25rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.tracker-footer button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ============================================================================
+   MESSAGGIO TRACKER VUOTO
+   ============================================================================ */
+
+.tracker-empty {
+  text-align: center;
+  padding: 1rem;
+  opacity: 0.7;
+  font-style: italic;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+.open-initiative-tracker {
+  width: 95%;
+  margin: 3px auto !important;
+}
+
+
+
