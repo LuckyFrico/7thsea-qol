@@ -140,7 +140,7 @@ Hooks.on("updateActor", (actor, data) => {
   const tracker = game.qol7thsea?.tracker;
   if (!tracker) return;
 
-  if (tracker.trackedActors.includes(actor.id)) {
-    tracker.render(true);
+  if (tracker.rendered && tracker.trackedActors.includes(actor.id)) {
+  tracker.render(false);
   }
 });
