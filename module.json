@@ -2,7 +2,7 @@
   "id": "7thsea-qol",
   "title": "7th Sea - Quality of Life Improvements",
   "description": "Quality of life improvements for the 7th Sea 2E system: initiative tracker, chat integrations, dramatic wounds integrations, and other features.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "authors": [
     {
       "name": "LuckyFrico"
@@ -18,6 +18,18 @@
   "styles": [
     "styles/tracker.css"
   ],
+  "languages": [
+  {
+    "lang": "en",
+    "name": "English",
+    "path": "en.json"
+  },
+  {
+    "lang": "it",
+    "name": "Italiano",
+    "path": "lang/it.json"
+  }
+  ],
   "relationships": {
     "systems": [
       {
@@ -31,6 +43,6 @@
   },
   "license": "MIT",
   "manifest": "https://github.com/LuckyFrico/7thsea-qol/releases/latest/download/module.json",
-  "download": "https://github.com/LuckyFrico/7thsea-qol/releases/download/v0.0.1/module.zip",
+  "download": "https://github.com/LuckyFrico/7thsea-qol/releases/download/v0.0.2/module.zip",
   "url": "https://github.com/LuckyFrico/7thsea-qol"
 }
