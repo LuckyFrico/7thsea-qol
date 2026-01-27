@@ -1,0 +1,33 @@
+{
+  "id": "7thsea-qol",
+  "title": "7th Sea - Quality of Life Improvements",
+  "description": "Quality of life improvements for the 7th Sea 2E system: initiative tracker, chat integrations, dramatic wounds integrations, and other features.",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "LuckyFrico"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351"
+  },
+  "esmodules": [
+    "scripts/qol.mjs"
+  ],
+  "styles": [
+    "styles/tracker.css"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "svnsea2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.0.0"
+        }
+      }
+    ]
+  },
+  "license": "MIT"
+}
