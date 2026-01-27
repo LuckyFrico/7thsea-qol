@@ -1,0 +1,51 @@
+<div class="initiative-tracker">
+
+  <section class="tracker-list">
+
+    {{#if entries.length}}
+      {{#each entries as |e|}}
+      <div class="tracker-entry {{#if e.inactive}}inactive{{/if}}" data-actor="{{e.id}}">
+
+        <div class="entry-avatar">
+          <img class="entry-img" src="{{e.img}}" />
+          <button class="tracker-remove" data-actor="{{e.id}}">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="entry-info">
+          <div class="entry-name">{{e.name}}</div>
+          <div class="entry-type">{{e.typeLabel}}</div>
+        </div>
+
+        <div class="entry-initiative">{{e.initiative}}</div>
+
+        <div class="entry-controls">
+          <button class="initiative-mod" data-actor="{{e.id}}" data-delta="1">+1</button>
+          <button class="initiative-mod" data-actor="{{e.id}}" data-delta="-1">-1</button>
+        </div>
+
+      </div>
+      {{/each}}
+    {{else}}
+      <div class="tracker-empty">
+        Rilascia un attore qua per iniziare
+      </div>
+    {{/if}}
+
+  </section>
+
+  <footer class="tracker-footer">
+    <button class="tracker-reset-increments">Reset incrementi</button>
+    <button class="tracker-reset-full">Reset completo</button>
+  </footer>
+
+</div>
+
+
+
+
+
+
+
+
