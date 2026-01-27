@@ -22,7 +22,7 @@
   {
     "lang": "en",
     "name": "English",
-    "path": "en.json"
+    "path": "lang/en.json"
   },
   {
     "lang": "it",
