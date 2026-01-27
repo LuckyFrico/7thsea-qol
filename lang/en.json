@@ -1,1 +1,15 @@
-
+{
+  "QOL.Tracker.Title": "Initiative Tracker",
+  "QOL.Tracker.Open": "Open Initiative Tracker",
+  "QOL.Tracker.Empty": "Drop an actor here to begin",
+  "QOL.Tracker.ResetIncrements": "Reset increments",
+  "QOL.Tracker.ResetFull": "Full reset",
+  "QOL.Tracker.ResetIncrementsConfirm": "Are you sure you want to continue? All increments will be reset.",
+  "QOL.Tracker.ResetFullConfirm": "Are you sure you want to continue? All actors will be removed from the tracker and all increments will be reset.",
+  "QOL.Tracker.Yes": "Yes",
+  "QOL.Tracker.No": "No",
+  "QOL.Type.Player": "Player",
+  "QOL.Type.Villain": "Villain",
+  "QOL.Type.Monster": "Monster",
+  "QOL.Type.Brute": "Brute"
+}
