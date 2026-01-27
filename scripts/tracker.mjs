@@ -27,7 +27,7 @@ export class TrackerApp extends Application {
         minimizable: true,
         width: 420,
         height: "auto",
-        title: "Tracker Iniziativa"
+        title: game.i18n.localize("QOL.Tracker.Title")
       },
       { overwrite: true }
     );
@@ -53,10 +53,10 @@ export class TrackerApp extends Application {
       .filter(a => a);
 
     const typeMap = {
-      playercharacter: "Giocatore",
-      villain: "Malvagio",
-      monster: "Mostro",
-      brute: "Sgherri"
+      playercharacter: game.i18n.localize("QOL.Type.Player"),
+      villain: game.i18n.localize("QOL.Type.Villain"),
+      monster: game.i18n.localize("QOL.Type.Monster"),
+      brute: game.i18n.localize("QOL.Type.Brute")
     };
 
     let entries = actors.map(a => {
@@ -163,15 +163,12 @@ export class TrackerApp extends Application {
 html.find(".tracker-reset-increments").click(async () => {
 
   new Dialog({
-    title: "Conferma reset incrementi",
-    content: `
-      <p>Sei sicuro di voler continuare?</p>
-      <p><strong>Saranno resettati tutti gli incrementi degli attori di gioco.</strong></p>
-    `,
+    title: game.i18n.localize("QOL.Tracker.ResetIncrements"),
+    content: `<p>${game.i18n.localize("QOL.Tracker.ResetIncrementsConfirm")}</p>`,
     buttons: {
       yes: {
         icon: '<i class="fas fa-check"></i>',
-        label: "Sì",
+        label: game.i18n.localize("QOL.Tracker.Yes"),
         callback: async () => {
 
           for (const id of this.trackedActors) {
@@ -196,7 +193,7 @@ html.find(".tracker-reset-increments").click(async () => {
       },
       no: {
         icon: '<i class="fas fa-times"></i>',
-        label: "No"
+        label: game.i18n.localize("QOL.Tracker.No")
       }
     },
     default: "no"
