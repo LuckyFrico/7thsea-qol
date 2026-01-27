@@ -11,5 +11,15 @@
   "QOL.Type.Player": "Giocatore",
   "QOL.Type.Villain": "Malvagio",
   "QOL.Type.Monster": "Mostro",
-  "QOL.Type.Brute": "Sgherri"
+  "QOL.Type.Brute": "Sgherri",
+  "QOL.Type.Hero": "Eroe",
+  "QOL.ApproachRoll.Title": "Tiro di Approccio",
+  "QOL.Wounds.HeroFirst": "⚠️ Attenzione: aggiungere 1 Dado Bonus (prima Ferita Drammatica)",
+  "QOL.Wounds.HeroThird": "⚠️ Attenzione: tutti i 10 esplodono (terza Ferita Drammatica)",
+  "QOL.Wounds.VillainBonus": "⚠️ Attenzione: aggiungere {bonus} Dadi Bonus ({count} eroi con 2 Ferite Drammatiche)",
+  "QOL.Settings.EnableTracker.Name": "Tracker Iniziativa",
+  "QOL.Settings.EnableTracker.Hint": "Attiva il tracker iniziativa personalizzato. Questa funzione permette la gestione degli incrementi durante le Sequenze d'Azione e le Sequenze Drammatiche",
+  "QOL.Settings.EnableWounds.Name": "Avviso Ferite Drammatiche",
+  "QOL.Settings.EnableWounds.Hint": "Attiva l'avviso per le Ferite Drammatiche. Questa funzione genera un avviso nel dialogo del Tiro di Approccio per personaggi, malvagi o mostri in base alle fertie drammatiche subite dagli attori nella scena. Attenzione l'avviso si basa sulle ferite drammatiche di tutti gli attori di tipo \"Giocatore\" presenti all'interno del mondo",
+  "QOL.Tracker.InitiativeSet": "{name}: iniziativa impostata a {value}"
 }

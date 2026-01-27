@@ -11,5 +11,15 @@
   "QOL.Type.Player": "Player",
   "QOL.Type.Villain": "Villain",
   "QOL.Type.Monster": "Monster",
-  "QOL.Type.Brute": "Brute"
+  "QOL.Type.Brute": "Brute",
+  "QOL.Type.Hero": "Hero",
+  "QOL.ApproachRoll.Title": "Approach Roll",
+  "QOL.Wounds.HeroFirst": "⚠️ Reminder: Add 1 Bonus Die (first Dramatic Wound)",
+  "QOL.Wounds.HeroThird": "⚠️ Reminder: All 10s explode (third Dramatic Wound)",
+  "QOL.Wounds.VillainBonus": "⚠️ Reminder: Add {bonus} Bonus Dice ({count} heroes with 2 Dramatic Wounds)",
+  "QOL.Settings.EnableTracker.Name": "Initiative Tracker",
+  "QOL.Settings.EnableTracker.Hint": "Enables the custom initiative tracker. This feature manages Raises during Action Sequences and Dramatic Sequences.",
+  "QOL.Settings.EnableWounds.Name": "Dramatic Wounds Warning",
+  "QOL.Settings.EnableWounds.Hint": "Enables the Dramatic Wounds warning. This feature displays a notice in the Approach Roll dialog for heroes, villains, or monsters based on the Dramatic Wounds suffered by actors in the scene. Note: the warning is calculated using the Dramatic Wounds of all actors of type \"Player\" present in the world.",
+  "QOL.Tracker.InitiativeSet": "{name}: initiative set to {value}"
 }
