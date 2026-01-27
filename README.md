@@ -21,7 +21,7 @@ A custom, resizable, and draggable initiative tracker designed around 7th Sea’
 - Reset options:
 - Fully localized UI
 
-<p align="left"> <img src="img/tracker_1.png" width="300"> <img src="img/tracker_3.png" width="300"> <img src="img/tracker_2.png" width="300"> </p>
+<p align="center"> <img src="img/tracker_1.png" width="300"> <img src="img/tracker_3.png" width="300"> <img src="img/tracker_2.png" width="300"> </p>
 
 ### **Chat Integration for Initiative**
 The module wires the “Add to Initiative” button in roll messages directly into the tracker logic.
@@ -37,8 +37,8 @@ The module provides small but impactful helpers around **Dramatic Wounds**, aime
 - Consistent access to Dramatic Wound state during scenes
 - Designed to complement, not replace, the GM’s narrative control
 
-<p align="left"> <img src="img/dramatic_wounds_1.png" width="300"> <img src="img/dramatic_wounds_2.png" width="300"> </p>
-<p align="left"> <img src="img/dramatic_wounds_3.png" width="300"> </p>
+<p align="center"> <img src="img/dramatic_wounds_1.png" width="300"> <img src="img/dramatic_wounds_2.png" width="300"> </p>
+<p align="center"> <img src="img/dramatic_wounds_3.png" width="300"> </p>
 
 ### **Localization Support**
 All module strings are fully localizable.  
