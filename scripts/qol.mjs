@@ -14,7 +14,7 @@ export const QOL = {
 // INIT
 // ============================================================================
 Hooks.once("init", () => {
-  console.log("7th Sea QOL | Inizializzazione modulo…");
+  console.log("7th Sea QOL | module intitialization…");
   game.qol7thsea = QOL;
 
   // ------------------------------------------------------------
@@ -32,7 +32,7 @@ Hooks.once("init", () => {
 // READY
 // ============================================================================
 Hooks.once("ready", () => {
-  console.log("7th Sea QOL | Modulo pronto.");
+  console.log("7th Sea QOL | Module ready.");
 
   // Inizializziamo le app
   QOL.tracker = new TrackerApp();
@@ -41,7 +41,7 @@ Hooks.once("ready", () => {
   // Integrazioni chat
   registerChatIntegration();
 
-  console.log("7th Sea QOL | Tracker iniziativa attivato.");
+  console.log("7th Sea QOL | Initiative Tracker activated.");
 });
 
 // ============================================================================
@@ -54,10 +54,10 @@ Hooks.on("renderActorDirectory", (app, html) => {
   if (jq.find(".open-initiative-tracker").length) return;
 
   const btn = $(`
-    <button class="open-initiative-tracker">
-      <i class="fa-solid fa-fire"></i> Tracker Iniziativa
-    </button>
-  `);
+  <button class="open-initiative-tracker">
+    <i class="fa-solid fa-fire"></i> ${game.i18n.localize("QOL.Tracker.Open")}
+  </button>
+`);
 
   // Trova il div che contiene "Apri il toolbox"
   const toolboxRow = jq.find(".header-actions.action-buttons.flexrow").eq(1);

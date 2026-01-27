@@ -208,15 +208,12 @@ html.find(".tracker-reset-increments").click(async () => {
     html.find(".tracker-reset-full").click(async () => {
 
   new Dialog({
-    title: "Conferma reset completo",
-    content: `
-      <p>Sei sicuro di voler continuare?</p>
-      <p><strong>Tutti gli attori verranno eliminati dal combat tracker e tutti gli incrementi saranno resettati.</strong></p>
-    `,
+    title: game.i18n.localize("QOL.Tracker.ResetFull"),
+    content: `<p>${game.i18n.localize("QOL.Tracker.ResetFullConfirm")}</p>`,
     buttons: {
       yes: {
         icon: '<i class="fas fa-check"></i>',
-        label: "Sì",
+        label: game.i18n.localize("QOL.Tracker.Yes"),
         callback: async () => {
 
           // Reset incrementi
@@ -246,7 +243,7 @@ html.find(".tracker-reset-increments").click(async () => {
       },
       no: {
         icon: '<i class="fas fa-times"></i>',
-        label: "No"
+        label: game.i18n.localize("QOL.Tracker.No")
       }
     },
     default: "no"
