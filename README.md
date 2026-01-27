@@ -41,6 +41,9 @@ Currently supported:
 
 - **English**
 - **Italian**
+- **French**
+- **Spanish**
+- **German**
 
 ---
 
