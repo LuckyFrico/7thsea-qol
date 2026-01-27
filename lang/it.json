@@ -1,1 +1,15 @@
-
+{
+  "QOL.Tracker.Title": "Tracker Iniziativa",
+  "QOL.Tracker.Open": "Apri il Tracker Iniziativa",
+  "QOL.Tracker.Empty": "Rilascia un attore qua per iniziare",
+  "QOL.Tracker.ResetIncrements": "Reset incrementi",
+  "QOL.Tracker.ResetFull": "Reset completo",
+  "QOL.Tracker.ResetIncrementsConfirm": "Sei sicuro di voler continuare? Saranno resettati tutti gli incrementi degli attori di gioco.",
+  "QOL.Tracker.ResetFullConfirm": "Sei sicuro di voler continuare? Tutti gli attori verranno eliminati dal combat tracker e tutti gli incrementi saranno resettati.",
+  "QOL.Tracker.Yes": "Sì",
+  "QOL.Tracker.No": "No",
+  "QOL.Type.Player": "Giocatore",
+  "QOL.Type.Villain": "Malvagio",
+  "QOL.Type.Monster": "Mostro",
+  "QOL.Type.Brute": "Sgherri"
+}
