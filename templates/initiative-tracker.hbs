@@ -29,15 +29,20 @@
       {{/each}}
     {{else}}
       <div class="tracker-empty">
-        Rilascia un attore qua per iniziare
+        {{localize "QOL.Tracker.Empty"}}
       </div>
     {{/if}}
 
   </section>
 
   <footer class="tracker-footer">
-    <button class="tracker-reset-increments">Reset incrementi</button>
-    <button class="tracker-reset-full">Reset completo</button>
+    <button class="tracker-reset-increments">
+      {{localize "QOL.Tracker.ResetIncrements"}}
+    </button>
+
+    <button class="tracker-reset-full">
+      {{localize "QOL.Tracker.ResetFull"}}
+    </button>
   </footer>
 
 </div>
