@@ -56,7 +56,8 @@ export class TrackerApp extends Application {
       playercharacter: game.i18n.localize("QOL.Type.Player"),
       villain: game.i18n.localize("QOL.Type.Villain"),
       monster: game.i18n.localize("QOL.Type.Monster"),
-      brute: game.i18n.localize("QOL.Type.Brute")
+      brute: game.i18n.localize("QOL.Type.Brute"),
+      hero: game.i18n.localize("QOL.Type.Hero"),
     };
 
     let entries = actors.map(a => {
@@ -65,11 +66,17 @@ export class TrackerApp extends Application {
       const isVillain = type === "villain";
       const isMonster = type === "monster";
       const isBrute = type === "brute";
+      const isHero = type === "hero";
 
       let initiative = 0;
 
       // PG → system.initiative
       if (isPG) {
+        initiative = a.system.initiative ?? 0;
+      }
+
+      // Hero → system.initiative
+      if (isHero) {
         initiative = a.system.initiative ?? 0;
       }
 
@@ -94,7 +101,7 @@ export class TrackerApp extends Application {
       };
     });
 
-    // Ordina: prima PG/Villain/Monster, poi Brute
+    // Ordina: prima PG/Villain/Monster/Hero, poi Brute
     entries.sort((a, b) => {
       if (a.isBrute && !b.isBrute) return 1;
       if (!a.isBrute && b.isBrute) return -1;
@@ -124,6 +131,10 @@ export class TrackerApp extends Application {
       const type = actor.type;
 
       if (type === "playercharacter") {
+        const updated = Math.max(0, (actor.system.initiative ?? 0) + delta);
+        await actor.update({ "system.initiative": updated });
+      }
+      else if (type === "hero") {
         const updated = Math.max(0, (actor.system.initiative ?? 0) + delta);
         await actor.update({ "system.initiative": updated });
       }
@@ -180,6 +191,9 @@ html.find(".tracker-reset-increments").click(async () => {
             if (type === "playercharacter") {
               await actor.update({ "system.initiative": 0 });
             }
+            else if (type === "hero") {
+              await actor.update({ "system.initiative": 0 });
+            }
             else if (type === "villain" || type === "monster") {
               await actor.setFlag("svnsea2e", "initiative", 0);
             }
@@ -224,6 +238,9 @@ html.find(".tracker-reset-increments").click(async () => {
             const type = actor.type;
 
             if (type === "playercharacter") {
+              await actor.update({ "system.initiative": 0 });
+            }
+            else if (type === "hero") {
               await actor.update({ "system.initiative": 0 });
             }
             else if (type === "villain" || type === "monster") {
