@@ -1,6 +1,8 @@
 # 7th Sea quality of life improvments - FoundryVTT
 
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FLuckyFrico%2F7thsea-qol%2Freleases%2Flatest%2Fdownload%2Fmodule.json&query=version&style=for-the-badge&logo=databricks&logoColor=violet&label=Latest%20version%20available&color=violet)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/LuckyFrico/7thsea-qol/total?style=for-the-badge&logo=github&color=teal)
+![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/LuckyFrico/7thsea-qol/latest/total?style=for-the-badge&logo=github&label=Downloads%20Latest&color=teal)
 
 A lightweight and modular Quality of Life (QoL) enhancement module for the **7th Sea Second Edition** system on Foundry VTT.  
 This project focuses on improving usability, streamlining gameplay, and adding non‑intrusive helpers that respect the original rules and design.
@@ -57,9 +59,3 @@ Foundry VTT:
 
 System: 
 [7th Sea Second Edition (Unofficial)](https://foundryvtt.com/packages/svnsea2e)
-
----
-
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/LuckyFrico/7thsea-qol/total?style=for-the-badge&logo=github&color=teal)
-![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/LuckyFrico/7thsea-qol/latest/total?style=for-the-badge&logo=github&label=Downloads%20Latest&color=teal)
-
