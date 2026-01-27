@@ -1,0 +1,26 @@
+{
+  "QOL.Tracker.Title": "Initiative-Tracker",
+  "QOL.Tracker.Open": "Initiative-Tracker öffnen",
+  "QOL.Tracker.Empty": "Ziehe einen Charakter hierher, um zu beginnen",
+  "QOL.Tracker.ResetIncrements": "Steigerungen zurücksetzen",
+  "QOL.Tracker.ResetFull": "Komplett zurücksetzen",
+  "QOL.Tracker.ResetIncrementsConfirm": "Bist du sicher, dass du fortfahren möchtest? Alle Steigerungen werden zurückgesetzt.",
+  "QOL.Tracker.ResetFullConfirm": "Bist du sicher, dass du fortfahren möchtest? Alle Charaktere werden aus dem Tracker entfernt und alle Steigerungen werden zurückgesetzt.",
+  "QOL.Tracker.Yes": "Ja",
+  "QOL.Tracker.No": "Nein",
+  "QOL.Type.Player": "Spieler",
+  "QOL.Type.Villain": "Schurke",
+  "QOL.Type.Monster": "Monster",
+  "QOL.Type.Brute": "Schlägertrupp",
+  "QOL.Type.Hero": "Held",
+  "QOL.ApproachRoll.Title": "Wurf der Vorgehensweise",
+  "QOL.Wounds.HeroFirst": "⚠️ Hinweis: Füge 1 Bonuswürfel hinzu (erste Dramatische Wunde)",
+  "QOL.Wounds.HeroThird": "⚠️ Hinweis: Alle 10er explodieren (dritte Dramatische Wunde)",
+  "QOL.Wounds.VillainBonus": "⚠️ Hinweis: Füge {bonus} Bonuswürfel hinzu ({count} Helden mit 2 Dramatischen Wunden)",
+  "QOL.Settings.EnableTracker.Name": "Initiative-Tracker",
+  "QOL.Settings.EnableTracker.Hint": "Aktiviert den benutzerdefinierten Initiative-Tracker. Diese Funktion verwaltet Steigerungen während Aktionssequenzen und Dramatischen Sequenzen.",
+  "QOL.Settings.EnableWounds.Name": "Warnung für Dramatische Wunden",
+  "QOL.Settings.EnableWounds.Hint": "Aktiviert die Warnung für Dramatische Wunden. Diese Funktion zeigt einen Hinweis im Fenster für den Wurf der Vorgehensweise an, basierend auf den Dramatischen Wunden der Helden, Schurken oder Monster in der Szene. Hinweis: Die Berechnung basiert auf den Dramatischen Wunden aller Charaktere des Typs „Held“ in der Welt.",
+  "QOL.Tracker.InitiativeSet": "{name}: Initiative gesetzt auf {value}"
+}
+
