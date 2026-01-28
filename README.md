@@ -40,6 +40,31 @@ The module provides small but impactful helpers around **Dramatic Wounds**, aime
 <p align="center"> <img src="img/dramatic_wounds_1.png" width="300"> <img src="img/dramatic_wounds_2.png" width="300"> </p>
 <p align="center"> <img src="img/dramatic_wounds_3.png" width="300"> </p>
 
+### **Villain Skill Rank Helper**
+A small but extremely useful enhancement for Villain sheets.
+The module automatically displays the Skill Rank derived from the Villain’s Strength
+No data is modified on the actor
+
+- Fully localized
+- Can be enabled/disabled from module settings
+- Updates automatically when the sheet is rendered
+
+<p align="center"> <img src="img/Villan_Ability_1.png" width="500"> </p>
+
+### **Enhanced Description Rendering (UUID Links & Inline Rolls)**
+The 7th Sea 2E system does not enrich item descriptions by default, meaning UUID links and inline rolls appear as plain text.
+This module adds a safe, non‑intrusive enhancement layer that:
+
+- Converts @UUID[…] references into clickable links
+- Enables inline rolls ([[1d10]]) inside item descriptions
+- Preserves TinyMCE editing
+- Does not alter stored data
+- Works on all item types
+
+This dramatically improves cross‑referencing between rules, notes, advantages, sorcery, and custom content.
+
+<p align="center"> <img src="img/Descriptions_Enrichment_1.png" width="400"> </p>
+
 ### **Localization Support**
 All module strings are fully localizable.  
 Currently supported:
