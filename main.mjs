@@ -4,7 +4,8 @@
 // ============================================================================
 
 import { TrackerApp } from "./scripts/tracker.mjs";
-import "./scripts/qol-wounds.mjs";  
+import "./scripts/qol-wounds.mjs";
+import "./scripts/qol-enrich.mjs";  
 
 export const QOL = {
   tracker: null
@@ -41,6 +42,16 @@ Hooks.once("init", () => {
     type: Array,
     default: []
   });
+
+  game.settings.register("7thsea-qol", "enableVillainSkillRank", {
+  name: game.i18n.localize("QOL.Settings.EnableVillainSkillRank.Name"),
+  hint: game.i18n.localize("QOL.Settings.EnableVillainSkillRank.Hint"),
+  scope: "world",
+  config: true,
+  type: Boolean,
+  default: true
+});
+
 });
 
 // ============================================================================
@@ -144,3 +155,33 @@ Hooks.on("updateActor", (actor, data) => {
   tracker.render(false);
   }
 });
+
+// Villan abilitiy score
+Hooks.on("renderActorSheet", (sheet, html, data) => {
+  const actor = sheet.actor;
+  if (actor.type !== "villain") return;
+
+  if (!game.settings.get("7thsea-qol", "enableVillainSkillRank")) return;
+
+  const strength = actor.system?.traits?.strength?.value ?? 0;
+  const skillRank = Math.ceil(strength / 2);
+
+  const villainyField = html.find(".villanyrank");
+  if (!villainyField.length) return;
+
+  if (html.find(".qol-villain-skillrank").length) return;
+
+  const label = game.i18n.format("QOL.Villain.SkillRank.Label", { value: skillRank });
+  const description = game.i18n.localize("QOL.Villain.SkillRank.Description");
+
+  const tip = $(`
+    <div class="qol-villain-skillrank" style="margin-top: 4px; margin-left: 4px; font-size: 14px">
+      ${label}<br>
+      <em style="font-size: 10px">${description}</em>
+    </div>
+  `);
+
+  villainyField.closest(".form-group").after(tip);
+});
+
+
