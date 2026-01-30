@@ -65,6 +65,19 @@ This dramatically improves cross‑referencing between rules, notes, advantages,
 
 <p align="center"> <img src="img/Descriptions_Enrichment_1.png" width="400"> </p>
 
+### **Sorte Lashes Helper**
+A dedicated quality‑of‑life enhancement for Vodacce Strega characters using the Sorte sorcery.
+When an actor possesses at least one Sorcery item with sorctype: "sorte" and is of type Player Character or Hero, the module automatically adds a compact and intuitive Lashes tracker to the Sorcery tab of the actor sheet.
+
+- Large, accessible +1 / –1 counter
+- Includes an expandable rules summary describing how Lashes work in 7th Sea 2E
+- Non‑intrusive: appears only for characters who actually use Sorte
+- Designed to complement the GM’s narrative control without automating consequences
+
+<p align="center">
+<img src="img/sorte_1.png" width="600">
+</p>
+
 ### **Localization Support**
 All module strings are fully localizable.  
 Currently supported:
