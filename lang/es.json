@@ -1,26 +1,64 @@
 {
-  "QOL.Tracker.Title": "Pista de Iniciativa",
-  "QOL.Tracker.Open": "Abrir la Pista de Iniciativa",
-  "QOL.Tracker.Empty": "Suelta aquí un personaje para comenzar",
-  "QOL.Tracker.ResetIncrements": "Reiniciar Alzadas",
-  "QOL.Tracker.ResetFull": "Reinicio completo",
-  "QOL.Tracker.ResetIncrementsConfirm": "¿Seguro que deseas continuar? Todas las Alzadas serán reiniciadas.",
-  "QOL.Tracker.ResetFullConfirm": "¿Seguro que deseas continuar? Todos los personajes serán eliminados de la pista y todas las Alzadas serán reiniciadas.",
-  "QOL.Tracker.Yes": "Sí",
-  "QOL.Tracker.No": "No",
-  "QOL.Type.Player": "Jugador",
-  "QOL.Type.Villain": "Villano",
-  "QOL.Type.Monster": "Monstruo",
-  "QOL.Type.Brute": "Matón",
-  "QOL.Type.Hero": "Héroe",
-  "QOL.ApproachRoll.Title": "Tirada de Enfoque",
-  "QOL.Wounds.HeroFirst": "⚠️ Recordatorio: Añade 1 Dado de Bonificación (primera Herida Dramática)",
-  "QOL.Wounds.HeroThird": "⚠️ Recordatorio: Todos los 10 explotan (tercera Herida Dramática)",
-  "QOL.Wounds.VillainBonus": "⚠️ Recordatorio: Añade {bonus} Dados de Bonificación ({count} héroes con 2 Heridas Dramáticas)",
-  "QOL.Settings.EnableTracker.Name": "Pista de Iniciativa",
-  "QOL.Settings.EnableTracker.Hint": "Activa la pista de iniciativa personalizada. Esta función gestiona las Alzadas durante las Secuencias de Acción y las Secuencias Dramáticas.",
-  "QOL.Settings.EnableWounds.Name": "Aviso de Heridas Dramáticas",
-  "QOL.Settings.EnableWounds.Hint": "Activa el aviso de Heridas Dramáticas. Esta función muestra un recordatorio en la ventana de Tirada de Enfoque para héroes, villanos o monstruos según las Heridas Dramáticas sufridas por los personajes presentes en la escena. Nota: el cálculo se basa en las Heridas Dramáticas de todos los personajes de tipo «Héroe» presentes en el mundo.",
-  "QOL.Tracker.InitiativeSet": "{name}: iniciativa establecida en {value}"
+  "QOL.Tracker": {
+    "Title": "Pista de Iniciativa",
+    "Open": "Abrir la Pista de Iniciativa",
+    "Empty": "Suelta aquí un personaje para comenzar",
+    "ResetIncrements": "Reiniciar Alzadas",
+    "ResetFull": "Reinicio completo",
+    "ResetIncrementsConfirm": "¿Seguro que deseas continuar? Todas las Alzadas serán reiniciadas.",
+    "ResetFullConfirm": "¿Seguro que deseas continuar? Todos los personajes serán eliminados de la pista y todas las Alzadas serán reiniciadas.",
+    "Yes": "Sí",
+    "No": "No",
+    "InitiativeSet": "{name}: iniciativa establecida en {value}"
+  },
+
+  "QOL.Type": {
+    "Player": "Jugador",
+    "Villain": "Villano",
+    "Monster": "Monstruo",
+    "Brute": "Matón",
+    "Hero": "Héroe"
+  },
+
+  "QOL.ApproachRoll": {
+    "Title": "Tirada de Enfoque"
+  },
+
+  "QOL.Wounds": {
+    "HeroFirst": "⚠️ Recordatorio: Añade 1 Dado de Bonificación (primera Herida Dramática)",
+    "HeroThird": "⚠️ Recordatorio: Todos los 10 explotan (tercera Herida Dramática)",
+    "VillainBonus": "⚠️ Recordatorio: Añade {bonus} Dados de Bonificación ({count} héroes con 2 Heridas Dramáticas)"
+  },
+
+  "QOL.Settings": {
+    "EnableTracker": {
+      "Name": "Pista de Iniciativa",
+      "Hint": "Activa la pista de iniciativa personalizada. Esta función gestiona las Alzadas durante las Secuencias de Acción y las Secuencias Dramáticas."
+    },
+
+    "EnableWounds": {
+      "Name": "Aviso de Heridas Dramáticas",
+      "Hint": "Activa el aviso de Heridas Dramáticas. Esta función muestra un recordatorio en la ventana de Tirada de Enfoque para héroes, villanos o monstruos según las Heridas Dramáticas sufridas por los personajes presentes en la escena. Nota: el cálculo se basa en las Heridas Dramáticas de todos los personajes de tipo «Héroe» presentes en el mundo."
+    },
+
+    "EnableVillainSkillRank": {
+      "Name": "Grado de Habilidad del Villano",
+      "Hint": "Muestra el grado de habilidad calculado bajo el campo Villainy Rank en la hoja del Villano. Este recordatorio es útil para tener siempre a mano el valor necesario para Ventajas, Hechicería y Estilos de Duelista."
+    }
+  },
+
+  "QOL.Villain": {
+    "SkillRank": {
+      "Label": "Grado de Habilidad: {value}",
+      "Description": "El grado de habilidad es igual a la mitad de la Fuerza del Villano, redondeado hacia arriba."
+    }
+  },
+
+  "QOL.Sorte": {
+  "Title": "Azotes",
+  "Rules.Summary": "Reglas de los Azotes",
+  "Rules.Text": "Cuando una Bruja utiliza un Tejido, debe gastar 1 Punto de Héroe y sufrir 1 Azote (algunos Tejidos pueden causar Azotes adicionales, pero 1 es siempre el mínimo).<br><br>Una Bruja puede eliminar un Azote de dos maneras:<br><strong>1. Pagando con sangre:</strong> sufre un número de Heridas igual a su número actual de Azotes.<br><strong>2. Pagando con mala fortuna:</strong> entrega al DJ 1 Punto de Peligro por cada Azote que tenga.<br><br>Después de que una Bruja tira los dados para un Riesgo, el DJ puede gastar 1 Punto de Peligro para impedirle usar cualquier resultado inferior a su número actual de Azotes.<br>Gastando un Punto de Peligro adicional, el DJ puede aplicar este efecto a otro Héroe en lugar de a la Bruja: el Destino será satisfecho de un modo u otro. Por ejemplo, una Bruja con 4 Azotes no podrá usar los resultados 1, 2 o 3 para crear Aumentos."
 }
+}
+
 

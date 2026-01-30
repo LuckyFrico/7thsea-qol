@@ -1,25 +1,62 @@
 {
-  "QOL.Tracker.Title": "Piste d’Initiative",
-  "QOL.Tracker.Open": "Ouvrir la Piste d’Initiative",
-  "QOL.Tracker.Empty": "Déposez un personnage ici pour commencer",
-  "QOL.Tracker.ResetIncrements": "Réinitialiser les Relèves",
-  "QOL.Tracker.ResetFull": "Réinitialisation complète",
-  "QOL.Tracker.ResetIncrementsConfirm": "Êtes-vous sûr de vouloir continuer ? Toutes les Relèves seront réinitialisées.",
-  "QOL.Tracker.ResetFullConfirm": "Êtes-vous sûr de vouloir continuer ? Tous les personnages seront retirés de la piste et toutes les Relèves seront réinitialisées.",
-  "QOL.Tracker.Yes": "Oui",
-  "QOL.Tracker.No": "Non",
-  "QOL.Type.Player": "Joueur",
-  "QOL.Type.Villain": "Méchant",
-  "QOL.Type.Monster": "Monstre",
-  "QOL.Type.Brute": "Brute",
-  "QOL.Type.Hero": "Héros",
-  "QOL.ApproachRoll.Title": "Jet d’Approche",
-  "QOL.Wounds.HeroFirst": "⚠️ Rappel : Ajoutez 1 Dé Bonus (première Blessure Dramatique)",
-  "QOL.Wounds.HeroThird": "⚠️ Rappel : Tous les 10 explosent (troisième Blessure Dramatique)",
-  "QOL.Wounds.VillainBonus": "⚠️ Rappel : Ajoutez {bonus} Dés Bonus ({count} héros avec 2 Blessures Dramatiques)",
-  "QOL.Settings.EnableTracker.Name": "Piste d’Initiative",
-  "QOL.Settings.EnableTracker.Hint": "Active la piste d’initiative personnalisée. Cette fonctionnalité gère les Relèves pendant les Séquences d’Action et les Séquences Dramatiques.",
-  "QOL.Settings.EnableWounds.Name": "Avertissement des Blessures Dramatiques",
-  "QOL.Settings.EnableWounds.Hint": "Active l’avertissement lié aux Blessures Dramatiques. Cette fonctionnalité affiche un rappel dans la fenêtre de Jet d’Approche pour les héros, méchants ou monstres selon les Blessures Dramatiques subies par les personnages présents dans la scène. Note : le calcul se base sur les Blessures Dramatiques de tous les personnages de type « Héros » présents dans le monde.",
-  "QOL.Tracker.InitiativeSet": "{name} : initiative définie à {value}"
+  "QOL.Tracker": {
+    "Title": "Piste d’Initiative",
+    "Open": "Ouvrir la Piste d’Initiative",
+    "Empty": "Déposez un personnage ici pour commencer",
+    "ResetIncrements": "Réinitialiser les Relèves",
+    "ResetFull": "Réinitialisation complète",
+    "ResetIncrementsConfirm": "Êtes-vous sûr de vouloir continuer ? Toutes les Relèves seront réinitialisées.",
+    "ResetFullConfirm": "Êtes-vous sûr de vouloir continuer ? Tous les personnages seront retirés de la piste et toutes les Relèves seront réinitialisées.",
+    "Yes": "Oui",
+    "No": "Non",
+    "InitiativeSet": "{name} : initiative définie à {value}"
+  },
+
+  "QOL.Type": {
+    "Player": "Joueur",
+    "Villain": "Méchant",
+    "Monster": "Monstre",
+    "Brute": "Brute",
+    "Hero": "Héros"
+  },
+
+  "QOL.ApproachRoll": {
+    "Title": "Jet d’Approche"
+  },
+
+  "QOL.Wounds": {
+    "HeroFirst": "⚠️ Rappel : Ajoutez 1 Dé Bonus (première Blessure Dramatique)",
+    "HeroThird": "⚠️ Rappel : Tous les 10 explosent (troisième Blessure Dramatique)",
+    "VillainBonus": "⚠️ Rappel : Ajoutez {bonus} Dés Bonus ({count} héros avec 2 Blessures Dramatiques)"
+  },
+
+  "QOL.Settings": {
+    "EnableTracker": {
+      "Name": "Piste d’Initiative",
+      "Hint": "Active la piste d’initiative personnalisée. Cette fonctionnalité gère les Relèves pendant les Séquences d’Action et les Séquences Dramatiques."
+    },
+
+    "EnableWounds": {
+      "Name": "Avertissement des Blessures Dramatiques",
+      "Hint": "Active l’avertissement lié aux Blessures Dramatiques. Cette fonctionnalité affiche un rappel dans la fenêtre de Jet d’Approche pour les héros, méchants ou monstres selon les Blessures Dramatiques subies par les personnages présents dans la scène. Note : le calcul se base sur les Blessures Dramatiques de tous les personnages de type « Héros » présents dans le monde."
+    },
+
+    "EnableVillainSkillRank": {
+      "Name": "Niveau de Compétence du Méchant",
+      "Hint": "Affiche le niveau de compétence calculé sous le champ Villainy Rank dans la fiche du Méchant. Ce rappel est utile pour connaître rapidement la valeur à utiliser avec les Atouts, la Sorcellerie et les Styles de Duelliste."
+    }
+  },
+
+  "QOL.Villain": {
+    "SkillRank": {
+      "Label": "Niveau de Compétence : {value}",
+      "Description": "Le niveau de compétence est égal à la moitié de la Force du Méchant, arrondi au supérieur."
+    }
+  },
+
+  "QOL.Sorte": {
+  "Title": "Cinglées",
+  "Rules.Summary": "Règles des Cinglées",
+  "Rules.Text": "Lorsqu’une Sorcière utilise une Tresse, elle doit dépenser 1 Point de Héros et subir 1 Cinglée (certaines Tresses peuvent en infliger davantage, mais 1 est toujours le minimum).<br><br>Une Sorcière peut retirer une Cinglée de deux façons :<br><strong>1. En payant de son sang :</strong> elle subit un nombre de Blessures égal au nombre actuel de Cinglées.<br><strong>2. En payant en malchance :</strong> elle donne au MJ 1 Point de Danger pour chaque Cinglée qu’elle possède.<br><br>Après qu’une Sorcière a lancé les dés pour un Risque, le MJ peut dépenser 1 Point de Danger pour l’empêcher d’utiliser tout résultat inférieur à son nombre actuel de Cinglées.<br>En dépensant un Point de Danger supplémentaire, le MJ peut appliquer cet effet à un autre Héros au lieu de la Sorcière : le Destin sera payé d’une manière ou d’une autre. Par exemple, une Sorcière ayant 4 Cinglées ne pourra pas utiliser les résultats 1, 2 ou 3 pour créer des Relances."
+}
 }

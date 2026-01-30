@@ -1,25 +1,60 @@
 {
-  "QOL.Tracker.Title": "Tracker Iniziativa",
-  "QOL.Tracker.Open": "Apri il Tracker Iniziativa",
-  "QOL.Tracker.Empty": "Rilascia un attore qua per iniziare",
-  "QOL.Tracker.ResetIncrements": "Reset incrementi",
-  "QOL.Tracker.ResetFull": "Reset completo",
-  "QOL.Tracker.ResetIncrementsConfirm": "Sei sicuro di voler continuare? Saranno resettati tutti gli incrementi degli attori di gioco.",
-  "QOL.Tracker.ResetFullConfirm": "Sei sicuro di voler continuare? Tutti gli attori verranno eliminati dal combat tracker e tutti gli incrementi saranno resettati.",
-  "QOL.Tracker.Yes": "Sì",
-  "QOL.Tracker.No": "No",
-  "QOL.Type.Player": "Giocatore",
-  "QOL.Type.Villain": "Malvagio",
-  "QOL.Type.Monster": "Mostro",
-  "QOL.Type.Brute": "Sgherri",
-  "QOL.Type.Hero": "Eroe",
-  "QOL.ApproachRoll.Title": "Tiro di Approccio",
-  "QOL.Wounds.HeroFirst": "⚠️ Attenzione: aggiungere 1 Dado Bonus (prima Ferita Drammatica)",
-  "QOL.Wounds.HeroThird": "⚠️ Attenzione: tutti i 10 esplodono (terza Ferita Drammatica)",
-  "QOL.Wounds.VillainBonus": "⚠️ Attenzione: aggiungere {bonus} Dadi Bonus ({count} eroi con 2 Ferite Drammatiche)",
-  "QOL.Settings.EnableTracker.Name": "Tracker Iniziativa",
-  "QOL.Settings.EnableTracker.Hint": "Attiva il tracker iniziativa personalizzato. Questa funzione permette la gestione degli incrementi durante le Sequenze d'Azione e le Sequenze Drammatiche",
-  "QOL.Settings.EnableWounds.Name": "Avviso Ferite Drammatiche",
-  "QOL.Settings.EnableWounds.Hint": "Attiva l'avviso per le Ferite Drammatiche. Questa funzione genera un avviso nel dialogo del Tiro di Approccio per personaggi, malvagi o mostri in base alle fertie drammatiche subite dagli attori nella scena. Attenzione l'avviso si basa sulle ferite drammatiche di tutti gli attori di tipo \"Giocatore\" presenti all'interno del mondo",
-  "QOL.Tracker.InitiativeSet": "{name}: iniziativa impostata a {value}"
+  "QOL.Tracker": {
+    "Title": "Tracker Iniziativa",
+    "Open": "Apri il Tracker Iniziativa",
+    "Empty": "Rilascia un attore qua per iniziare",
+    "ResetIncrements": "Reset incrementi",
+    "ResetFull": "Reset completo",
+    "ResetIncrementsConfirm": "Sei sicuro di voler continuare? Saranno resettati tutti gli incrementi degli attori di gioco.",
+    "ResetFullConfirm": "Sei sicuro di voler continuare? Tutti gli attori verranno eliminati dal combat tracker e tutti gli incrementi saranno resettati.",
+    "Yes": "Sì",
+    "No": "No",
+    "InitiativeSet": "{name}: iniziativa impostata a {value}"
+  },
+
+  "QOL.Type": {
+    "Player": "Giocatore",
+    "Villain": "Malvagio",
+    "Monster": "Mostro",
+    "Brute": "Sgherri",
+    "Hero": "Eroe"
+  },
+
+  "QOL.ApproachRoll": {
+    "Title": "Tiro di Approccio"
+  },
+
+  "QOL.Wounds": {
+    "HeroFirst": "⚠️ Attenzione: aggiungere 1 Dado Bonus (prima Ferita Drammatica)",
+    "HeroThird": "⚠️ Attenzione: tutti i 10 esplodono (terza Ferita Drammatica)",
+    "VillainBonus": "⚠️ Attenzione: aggiungere {bonus} Dadi Bonus ({count} eroi con 2 Ferite Drammatiche)"
+  },
+
+  "QOL.Settings": {
+    "EnableTracker": {
+      "Name": "Tracker Iniziativa",
+      "Hint": "Attiva il tracker iniziativa personalizzato. Questa funzione permette la gestione degli incrementi durante le Sequenze d'Azione e le Sequenze Drammatiche"
+    },
+    "EnableWounds": {
+      "Name": "Avviso Ferite Drammatiche",
+      "Hint": "Attiva l'avviso per le Ferite Drammatiche. Questa funzione genera un avviso nel dialogo del Tiro di Approccio per personaggi, malvagi o mostri in base alle ferite drammatiche subite dagli attori nella scena. Attenzione l'avviso si basa sulle ferite drammatiche di tutti gli attori di tipo \"Giocatore\" presenti all'interno del mondo"
+    },
+    "EnableVillainSkillRank": {
+      "Name": "Grado Abilità del Malvagio",
+      "Hint": "Mostra il Grado Abilità calcolato sotto il campo Grado di Malvagità nella scheda dei Malvagi. Questo tip è utile per avere sempre sotto mano il valore da dover usare con Vantaggi, Stregonerie e Stili di Duello"
+    }
+  },
+
+  "QOL.Villain": {
+    "SkillRank": {
+      "Label": "Grado Abilità: {value}",
+      "Description": "Il Grado per le abilità è pari a metà della Forza del Malvagio arrotondato per eccesso."
+    }
+  },
+
+  "QOL.Sorte":{
+    "Title": "Staffilate",
+    "Rules.Summary": "Regole delle Staffilate",
+    "Rules.Text": "Quando una Strega usa una Trama deve spendere 1 Punto Eroe e subire 1 Staffilata (alcune Trame possono aggiungerne altre, ma 1 è sempre il minimo).<br><br>Una Strega può rimuovere una Staffilata in due modi:<br><strong>1. Pagando in sangue:</strong> subisce un numero di Ferite pari alle Staffilate presenti.<br><strong>2. Pagando in sfortuna:</strong> concede al GM 1 Punto Pericolo per ogni Staffilata presente.<br><br>Dopo che una Strega ha lanciato i dadi per un Rischio il GM può spendere 1 Punto Pericolo per impedirle di usare qualsiasi risultato inferiore al numero attuale di Staffilate.<br>Pagando un ulteriore Punto Pericolo, il GM può infliggere questo effetto a un Eroe diverso dalla Strega: il Fato sarà ripagato in un modo o nell’altro. Per esempio, una Strega che abbia 4 Staffilate non potrà usare i risultati 1, 2 e 3 per creare Incrementi."
+  }
 }

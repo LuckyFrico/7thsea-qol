@@ -1,25 +1,62 @@
 {
-  "QOL.Tracker.Title": "Initiative Tracker",
-  "QOL.Tracker.Open": "Open Initiative Tracker",
-  "QOL.Tracker.Empty": "Drop an actor here to begin",
-  "QOL.Tracker.ResetIncrements": "Reset increments",
-  "QOL.Tracker.ResetFull": "Full reset",
-  "QOL.Tracker.ResetIncrementsConfirm": "Are you sure you want to continue? All increments will be reset.",
-  "QOL.Tracker.ResetFullConfirm": "Are you sure you want to continue? All actors will be removed from the tracker and all increments will be reset.",
-  "QOL.Tracker.Yes": "Yes",
-  "QOL.Tracker.No": "No",
-  "QOL.Type.Player": "Player",
-  "QOL.Type.Villain": "Villain",
-  "QOL.Type.Monster": "Monster",
-  "QOL.Type.Brute": "Brute",
-  "QOL.Type.Hero": "Hero",
-  "QOL.ApproachRoll.Title": "Approach Roll",
-  "QOL.Wounds.HeroFirst": "⚠️ Reminder: Add 1 Bonus Die (first Dramatic Wound)",
-  "QOL.Wounds.HeroThird": "⚠️ Reminder: All 10s explode (third Dramatic Wound)",
-  "QOL.Wounds.VillainBonus": "⚠️ Reminder: Add {bonus} Bonus Dice ({count} heroes with 2 Dramatic Wounds)",
-  "QOL.Settings.EnableTracker.Name": "Initiative Tracker",
-  "QOL.Settings.EnableTracker.Hint": "Enables the custom initiative tracker. This feature manages Raises during Action Sequences and Dramatic Sequences.",
-  "QOL.Settings.EnableWounds.Name": "Dramatic Wounds Warning",
-  "QOL.Settings.EnableWounds.Hint": "Enables the Dramatic Wounds warning. This feature displays a notice in the Approach Roll dialog for heroes, villains, or monsters based on the Dramatic Wounds suffered by actors in the scene. Note: the warning is calculated using the Dramatic Wounds of all actors of type \"Player\" present in the world.",
-  "QOL.Tracker.InitiativeSet": "{name}: initiative set to {value}"
+  "QOL.Tracker": {
+    "Title": "Initiative Tracker",
+    "Open": "Open Initiative Tracker",
+    "Empty": "Drop an actor here to begin",
+    "ResetIncrements": "Reset increments",
+    "ResetFull": "Full reset",
+    "ResetIncrementsConfirm": "Are you sure you want to continue? All increments will be reset.",
+    "ResetFullConfirm": "Are you sure you want to continue? All actors will be removed from the tracker and all increments will be reset.",
+    "Yes": "Yes",
+    "No": "No",
+    "InitiativeSet": "{name}: initiative set to {value}"
+  },
+
+  "QOL.Type": {
+    "Player": "Player",
+    "Villain": "Villain",
+    "Monster": "Monster",
+    "Brute": "Brute",
+    "Hero": "Hero"
+  },
+
+  "QOL.ApproachRoll": {
+    "Title": "Approach Roll"
+  },
+
+  "QOL.Wounds": {
+    "HeroFirst": "⚠️ Reminder: Add 1 Bonus Die (first Dramatic Wound)",
+    "HeroThird": "⚠️ Reminder: All 10s explode (third Dramatic Wound)",
+    "VillainBonus": "⚠️ Reminder: Add {bonus} Bonus Dice ({count} heroes with 2 Dramatic Wounds)"
+  },
+
+  "QOL.Settings": {
+    "EnableTracker": {
+      "Name": "Initiative Tracker",
+      "Hint": "Enables the custom initiative tracker. This feature manages Raises during Action Sequences and Dramatic Sequences."
+    },
+
+    "EnableWounds": {
+      "Name": "Dramatic Wounds Warning",
+      "Hint": "Enables the Dramatic Wounds warning. This feature displays a notice in the Approach Roll dialog for heroes, villains, or monsters based on the Dramatic Wounds suffered by actors in the scene. Note: the warning is calculated using the Dramatic Wounds of all actors of type \"Player\" present in the world."
+    },
+
+    "EnableVillainSkillRank": {
+      "Name": "Villain Skill Rank Helper",
+      "Hint": "Displays the calculated Skill Rank under the Villainy Rank field on Villain sheets. This tip is useful to quickly reference the value required for Advantages, Sorcery, and Duelist Styles."
+    }
+  },
+
+  "QOL.Villain": {
+    "SkillRank": {
+      "Label": "Skill Rank: {value}",
+      "Description": "The Skill Rank is equal to half the Villain’s Strength, rounded up."
+    }
+  },
+
+  "QOL.Sorte": {
+  "Title": "Lashes",
+  "Rules.Summary": "Rules for Lashes",
+  "Rules.Text": "When a Witch uses a Weave, she must spend 1 Hero Point and suffer 1 Lash (some Weaves may cause additional Lashes, but 1 is always the minimum).<br><br>A Witch may remove a Lash in two ways:<br><strong>1. Paying in blood:</strong> she suffers a number of Wounds equal to her current Lashes.<br><strong>2. Paying in misfortune:</strong> she gives the GM 1 Danger Point for each Lash she currently has.<br><br>After a Witch rolls dice for a Risk, the GM may spend 1 Danger Point to prevent her from using any die result lower than her current number of Lashes.<br>By spending an additional Danger Point, the GM may apply this effect to a different Hero instead of the Witch: Fate will be repaid one way or another. For example, a Witch with 4 Lashes cannot use results of 1, 2, or 3 to create Raises."
+}
 }

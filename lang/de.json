@@ -1,26 +1,63 @@
 {
-  "QOL.Tracker.Title": "Initiative-Tracker",
-  "QOL.Tracker.Open": "Initiative-Tracker öffnen",
-  "QOL.Tracker.Empty": "Ziehe einen Charakter hierher, um zu beginnen",
-  "QOL.Tracker.ResetIncrements": "Steigerungen zurücksetzen",
-  "QOL.Tracker.ResetFull": "Komplett zurücksetzen",
-  "QOL.Tracker.ResetIncrementsConfirm": "Bist du sicher, dass du fortfahren möchtest? Alle Steigerungen werden zurückgesetzt.",
-  "QOL.Tracker.ResetFullConfirm": "Bist du sicher, dass du fortfahren möchtest? Alle Charaktere werden aus dem Tracker entfernt und alle Steigerungen werden zurückgesetzt.",
-  "QOL.Tracker.Yes": "Ja",
-  "QOL.Tracker.No": "Nein",
-  "QOL.Type.Player": "Spieler",
-  "QOL.Type.Villain": "Schurke",
-  "QOL.Type.Monster": "Monster",
-  "QOL.Type.Brute": "Schlägertrupp",
-  "QOL.Type.Hero": "Held",
-  "QOL.ApproachRoll.Title": "Wurf der Vorgehensweise",
-  "QOL.Wounds.HeroFirst": "⚠️ Hinweis: Füge 1 Bonuswürfel hinzu (erste Dramatische Wunde)",
-  "QOL.Wounds.HeroThird": "⚠️ Hinweis: Alle 10er explodieren (dritte Dramatische Wunde)",
-  "QOL.Wounds.VillainBonus": "⚠️ Hinweis: Füge {bonus} Bonuswürfel hinzu ({count} Helden mit 2 Dramatischen Wunden)",
-  "QOL.Settings.EnableTracker.Name": "Initiative-Tracker",
-  "QOL.Settings.EnableTracker.Hint": "Aktiviert den benutzerdefinierten Initiative-Tracker. Diese Funktion verwaltet Steigerungen während Aktionssequenzen und Dramatischen Sequenzen.",
-  "QOL.Settings.EnableWounds.Name": "Warnung für Dramatische Wunden",
-  "QOL.Settings.EnableWounds.Hint": "Aktiviert die Warnung für Dramatische Wunden. Diese Funktion zeigt einen Hinweis im Fenster für den Wurf der Vorgehensweise an, basierend auf den Dramatischen Wunden der Helden, Schurken oder Monster in der Szene. Hinweis: Die Berechnung basiert auf den Dramatischen Wunden aller Charaktere des Typs „Held“ in der Welt.",
-  "QOL.Tracker.InitiativeSet": "{name}: Initiative gesetzt auf {value}"
+  "QOL.Tracker": {
+    "Title": "Initiative-Tracker",
+    "Open": "Initiative-Tracker öffnen",
+    "Empty": "Ziehe einen Charakter hierher, um zu beginnen",
+    "ResetIncrements": "Steigerungen zurücksetzen",
+    "ResetFull": "Komplett zurücksetzen",
+    "ResetIncrementsConfirm": "Bist du sicher, dass du fortfahren möchtest? Alle Steigerungen werden zurückgesetzt.",
+    "ResetFullConfirm": "Bist du sicher, dass du fortfahren möchtest? Alle Charaktere werden aus dem Tracker entfernt und alle Steigerungen werden zurückgesetzt.",
+    "Yes": "Ja",
+    "No": "Nein",
+    "InitiativeSet": "{name}: Initiative gesetzt auf {value}"
+  },
+
+  "QOL.Type": {
+    "Player": "Spieler",
+    "Villain": "Schurke",
+    "Monster": "Monster",
+    "Brute": "Schlägertrupp",
+    "Hero": "Held"
+  },
+
+  "QOL.ApproachRoll": {
+    "Title": "Wurf der Vorgehensweise"
+  },
+
+  "QOL.Wounds": {
+    "HeroFirst": "⚠️ Hinweis: Füge 1 Bonuswürfel hinzu (erste Dramatische Wunde)",
+    "HeroThird": "⚠️ Hinweis: Alle 10er explodieren (dritte Dramatische Wunde)",
+    "VillainBonus": "⚠️ Hinweis: Füge {bonus} Bonuswürfel hinzu ({count} Helden mit 2 Dramatischen Wunden)"
+  },
+
+  "QOL.Settings": {
+    "EnableTracker": {
+      "Name": "Initiative-Tracker",
+      "Hint": "Aktiviert den benutzerdefinierten Initiative-Tracker. Diese Funktion verwaltet Steigerungen während Aktionssequenzen und Dramatischen Sequenzen."
+    },
+
+    "EnableWounds": {
+      "Name": "Warnung für Dramatische Wunden",
+      "Hint": "Aktiviert die Warnung für Dramatische Wunden. Diese Funktion zeigt einen Hinweis im Fenster für den Wurf der Vorgehensweise an, basierend auf den Dramatischen Wunden der Helden, Schurken oder Monster in der Szene. Hinweis: Die Berechnung basiert auf den Dramatischen Wunden aller Charaktere des Typs „Held“ in der Welt."
+    },
+
+    "EnableVillainSkillRank": {
+      "Name": "Fertigkeitsrang des Schurken",
+      "Hint": "Zeigt den berechneten Fertigkeitsrang unter dem Feld Villainy Rank im Schurkenbogen an. Dieser Hinweis ist hilfreich, um den Wert für Vorteile, Hexerei und Duellstile schnell zur Hand zu haben."
+    }
+  },
+
+  "QOL.Villain": {
+    "SkillRank": {
+      "Label": "Fertigkeitsrang: {value}",
+      "Description": "Der Fertigkeitsrang entspricht der Hälfte der Stärke des Schurken, aufgerundet."
+    }
+  },
+
+  "QOL.Sorte": {
+  "Title": "Peitschenhiebe",
+  "Rules.Summary": "Regeln der Peitschenhiebe",
+  "Rules.Text": "Wenn eine Hexe ein Gewebe einsetzt, muss sie 1 Heldentpunkt ausgeben und 1 Peitschenhieb erleiden (einige Gewebe können zusätzliche Peitschenhiebe verursachen, aber 1 ist immer das Minimum).<br><br>Eine Hexe kann einen Peitschenhieb auf zwei Arten entfernen:<br><strong>1. Mit Blut bezahlen:</strong> sie erleidet eine Anzahl an Wunden, die ihrer aktuellen Anzahl an Peitschenhieben entspricht.<br><strong>2. Mit Unglück bezahlen:</strong> sie gibt dem SL 1 Gefahrenpunkt für jeden Peitschenhieb, den sie besitzt.<br><br>Nachdem eine Hexe die Würfel für ein Risiko geworfen hat, kann der SL 1 Gefahrenpunkt ausgeben, um sie daran zu hindern, Ergebnisse zu verwenden, die niedriger sind als ihre aktuelle Anzahl an Peitschenhieben.<br>Gibt der SL einen weiteren Gefahrenpunkt aus, kann er diesen Effekt auf einen anderen Helden statt auf die Hexe anwenden: Das Schicksal wird auf die eine oder andere Weise beglichen. Eine Hexe mit 4 Peitschenhieben kann zum Beispiel die Ergebnisse 1, 2 oder 3 nicht verwenden, um Steigerungen zu erzeugen."
+}
 }
 
