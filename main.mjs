@@ -7,6 +7,7 @@ import { TrackerApp } from "./scripts/tracker.mjs";
 import "./scripts/qol-wounds.mjs";
 import "./scripts/qol-enrich.mjs"; 
 import "./scripts/qol-sorcery.mjs"; 
+import "./scripts/qol-advancements.mjs"; 
 
 export const QOL = {
   tracker: null
