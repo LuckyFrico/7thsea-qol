@@ -78,6 +78,9 @@ When an actor possesses at least one Sorcery item with sorctype: "sorte" and is 
 <img src="img/sorte_1.png" width="600">
 </p>
 
+### **Advancements tracker**
+Add a dedicated form to track acts and player advancements
+
 ### **Localization Support**
 All module strings are fully localizable.  
 Currently supported:
